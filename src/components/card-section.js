@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "./card";
 import dummy from "../Assets/images/Brainstorming session.png" 
-
+import repairs from "../Assets/images/task.png"
+import dataManagement from "../Assets/images/data-management.png"
+import illustration from "../Assets/images/illustration.png"
 
 export default function CardSection(){
     return(
@@ -11,22 +13,22 @@ export default function CardSection(){
                 <Card 
                 image={dummy}
                 title="Web Design"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad"
+                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora "
                 />
                 <Card 
-                image={dummy}
-                title="Web Design"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad"
+                image={dataManagement}
+                title="Data Management"
+                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora "
                 />
                 <Card 
-                image={dummy}
-                title="Web Design"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad"
+                image={illustration}
+                title="Graphic Design"
+                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora "
                 />
                 <Card 
-                image={dummy}
-                title="Web Design"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora nihil maxime adipisci dolorum nobis, illum placeat ad"
+                image={repairs}
+                title="Tech Support &amp; Maintainance"
+                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quos natus veritatis tempora "
                 />
             </div>
         </div>
