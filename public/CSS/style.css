@@ -18,6 +18,7 @@ html, body {
   transition: 700ms ease-in;
   /* overflow-x: hidden; */
   word-wrap: break-word;
+  text-align: justify;
 }
 
 a {
@@ -182,6 +183,9 @@ nav ul {
   align-items: center;
   gap: 1rem;
 }
+nav ul > div {
+  flex: 1;
+}
 @media only screen and (max-width: 800px) {
   nav ul {
     display: none;
@@ -220,6 +224,9 @@ nav li {
   gap: 1rem;
   justify-content: space-between;
 }
+#mNav > div > div {
+  flex: 1;
+}
 #mNav i {
   font-size: 2rem;
 }
@@ -236,6 +243,7 @@ nav li {
 }
 
 header {
+  border: solid red;
   margin: auto;
   width: 85%;
   height: 100vh;
@@ -270,6 +278,10 @@ header h3 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: 95%;
+  }
+  header > div {
+    flex: 1;
   }
 }
 
@@ -285,6 +297,9 @@ header h3 {
   background-color: #fff;
   padding: 8rem 12rem 4rem 12rem;
 }
+.section-light > div {
+  flex: 1;
+}
 .section-light div {
   flex: 1;
 }
@@ -295,8 +310,12 @@ header h3 {
     padding: 2rem;
   }
 }
+.section-light div {
+  width: 85%;
+}
 
 #section {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -304,7 +323,20 @@ header h3 {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  padding: 4rem 12rem;
+  padding: 4rem;
+  text-align: center;
+}
+#section > div {
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  #section {
+    flex-direction: column;
+    padding: 4rem;
+  }
+}
+#section div {
+  width: 85%;
 }
 
 .got-question {
@@ -314,7 +346,7 @@ header h3 {
   background-size: 50%;
   background-position-x: left;
   background-position-y: center;
-  padding: 2rem 8rem;
+  padding: 2rem;
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -322,6 +354,13 @@ header h3 {
   align-items: center;
   gap: 1rem;
   justify-content: flex-start;
+  text-align: center;
+}
+.got-question > div {
+  flex: 1;
+}
+.got-question div {
+  width: 85%;
 }
 @media only screen and (max-width: 800px) {
   .got-question {
@@ -350,6 +389,9 @@ header h3 {
   gap: 1rem;
   flex-wrap: wrap;
 }
+.card-container > div {
+  flex: 1;
+}
 .card-container div {
   flex: 1;
 }
@@ -371,6 +413,9 @@ header h3 {
   padding: 1.5rem 3rem;
   background-color: #fff;
   position: relative;
+}
+.card > div {
+  flex: 1;
 }
 .card img {
   width: 50%;
@@ -397,6 +442,9 @@ footer {
 footer > div {
   flex: 1;
 }
+footer > div {
+  flex: 1;
+}
 footer h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -419,6 +467,9 @@ footer p {
   gap: 1rem;
   text-align: justify;
   justify-content: space-around;
+}
+.endNote > div {
+  flex: 1;
 }
 .endNote p {
   font-size: 1rem;

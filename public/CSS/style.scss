@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    > div{
+        flex: 1;
+    }
 }
 @mixin section{
     @include flex(row);
@@ -49,6 +53,7 @@ html, body{
     transition: 700ms ease-in;
     /* overflow-x: hidden; */
     word-wrap: break-word;
+    text-align: justify;
 }
 a{
     color: $text;
@@ -237,6 +242,7 @@ nav{
 }
 
 header{
+    border: solid red;
     margin: auto;
     width: 85%;
     height: 100vh;
@@ -245,7 +251,6 @@ header{
     justify-content: center;
     gap: 3rem;
     align-items: center;
-    
     img{
         width: 100%;
     }
@@ -262,17 +267,31 @@ header{
     }
 
     @include mobile{
-        @include flex(column-reverse)
+        @include flex(column-reverse);
+        width: 95%;
+        
     }
 }
 
 .section-light{
-    @include section
+    @include section;
+    div{
+        width: 85%;
+    }
 }
 #section{    
+    width: 100%;
     @include flex(row);
     justify-content: space-between;
-    padding: 4rem 12rem;
+    padding: 4rem;
+    text-align: center;
+    @include mobile{
+        flex-direction: column;
+        padding: 4rem;
+    }
+    div{
+        width: 85%;
+    }
 }
 .got-question{
     height: 100%;
@@ -281,9 +300,14 @@ header{
     background-size: 50%;
     background-position-x: left;
     background-position-y: center;
-    padding: 2rem 8rem;
+    padding: 2rem;
     @include flex(row-reverse);
-    justify-content:flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    
+    div{
+        width: 85%;
+    }
 
     @include mobile{
         background-size: 100%;
