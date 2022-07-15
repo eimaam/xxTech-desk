@@ -242,7 +242,6 @@ nav{
 }
 
 header{
-    border: solid red;
     margin: auto;
     width: 85%;
     height: 100vh;
@@ -304,7 +303,7 @@ header{
     @include flex(row-reverse);
     justify-content: flex-start;
     text-align: center;
-    
+
     div{
         width: 85%;
     }
