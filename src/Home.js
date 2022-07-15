@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header";
-import Section from "./components/section";
-import MiniSection from "./components/mini-section";
+import Section from "./components/details";
+import MiniSection from "./components/section";
 import Question from "./components/mini-section(questions)";
 import CardSection from "./components/card-section";
 import Footer from "./components/footer";
@@ -37,20 +37,8 @@ function Home(){
                 buttonLabel="See reviews"
                 />
                 <Question />
-                <Section 
-                className="section-light"
-                image={design}
-                title="We design just what's best for you!"
-                content="Online Shopping Website? Real Estate? School Management?
-                        You make the choice, we bring it to life at its best!"
-                
-                />
-            </div>
-            {/* Cards - Our Services*/}
-            <CardSection />
-
-            <Section
-                className="section-default" 
+                <Section
+                className="section-light" 
                 image = {fastMessaging}
                 title = "24/7 Customer Support"
                 content = "With our automated customer support system and fine-tuned customer care representatives, we are here to always serve you on time."
@@ -58,9 +46,19 @@ function Home(){
                 ImageFirst = {true}
                 buttonLabel="Contact us"
                 />
+            {/* Cards - Our Services*/}
+                <CardSection />
+                <Section 
+                    className="section-light"
+                    image={design}
+                    title="We design just what's best for you!"
+                    content="Online Shopping Website? Real Estate? School Management?
+                            You make the choice, we bring it to life at its best!"    
+                />
             
-            {/* Footer */}
-            <Footer />
+                {/* Footer */}
+                <Footer />
+            </div>
         </>
     )
 }

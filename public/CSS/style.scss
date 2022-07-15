@@ -8,6 +8,22 @@
     align-items: center;
     gap: 1rem;
 }
+@mixin section{
+    @include flex(row);
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: $default;
+    padding: 8rem 12rem 4rem 12rem;
+
+    div{
+        flex: 1;
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+}
 @mixin mobile{
     @media only screen and (max-width: 800px){
         @content;
@@ -133,7 +149,18 @@ nav{
     padding-inline: 1.5rem;
     box-shadow: 1px 1px;
     z-index: 10;
-
+    #toggler{
+        text-align: right;
+    }
+    #hamburger{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+    #closeNav{
+        display: none;
+    }
     &.active{
         background-color: $default;
     }
@@ -145,15 +172,21 @@ nav{
     img{
         width: 35px;
         height: 35px;
+        @include mobile{
+            display: none;
+        }
     }
     > #site-title{
         margin-right: auto;
         align-self: center;
+        @include mobile{
+            display: none;
+        }
     }
     ul{
         @include flex(row);
             @include mobile{
-                flex-direction: column;
+                display: none;
             }
     }
 
@@ -162,21 +195,57 @@ nav{
         font-size: 1.1rem;
     }
 
-    @include mobile{
-        flex-direction: column;
+    
+}
+
+#mNav{
+    margin-top: 2rem;
+    width: 80%;
+    display: none;
+    inset: 0 0 0 20%;
+    position: fixed;
+    opacity: 0.85;
+    background-color: $text;
+    backdrop-filter: blur(1rem);
+    padding: 1rem;
+    z-index: 1000;
+    transition: 300ms ease-in-out;
+    color: $default !important;
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    > div{
+        @include flex(row);
+        justify-content: space-between;
+    }
+    i{
+        font-size: 2rem;
+    }
+    li{
+        font-size: 1rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $default;
+    }
+    a{
+        color: $default;
+    }
+    p{
+        margin-top: 5rem;
     }
 }
+
 header{
     margin: auto;
-    margin-top: 4rem;
     width: 85%;
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     justify-content: center;
     gap: 3rem;
     align-items: center;
-
+    
     img{
         width: 100%;
     }
@@ -196,31 +265,14 @@ header{
         @include flex(column-reverse)
     }
 }
-.section{
-    padding: 4rem 0;
-}
-@mixin section{
-    @include flex(row);
-    align-items: flex-start;
-    gap: 2rem;
-    background-color: $default;
-    padding: 8rem 12rem 4rem 12rem;
 
-    div{
-        flex: 1;
-    }
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-    }
-}
 .section-light{
     @include section
 }
-.section-default{
-    @include section;
-    background-color: $bgColor;
+#section{    
+    @include flex(row);
+    justify-content: space-between;
+    padding: 4rem 12rem;
 }
 .got-question{
     height: 100%;

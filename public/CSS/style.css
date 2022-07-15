@@ -134,6 +134,20 @@ nav {
   box-shadow: 1px 1px;
   z-index: 10;
 }
+nav #toggler {
+  text-align: right;
+}
+nav #hamburger {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  nav #hamburger {
+    display: block;
+  }
+}
+nav #closeNav {
+  display: none;
+}
 nav.active {
   background-color: #fff;
 }
@@ -146,9 +160,19 @@ nav img {
   width: 35px;
   height: 35px;
 }
+@media only screen and (max-width: 800px) {
+  nav img {
+    display: none;
+  }
+}
 nav > #site-title {
   margin-right: auto;
   align-self: center;
+}
+@media only screen and (max-width: 800px) {
+  nav > #site-title {
+    display: none;
+  }
 }
 nav ul {
   margin: auto;
@@ -160,24 +184,61 @@ nav ul {
 }
 @media only screen and (max-width: 800px) {
   nav ul {
-    flex-direction: column;
+    display: none;
   }
 }
 nav li {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-@media only screen and (max-width: 800px) {
-  nav {
-    flex-direction: column;
-  }
+
+#mNav {
+  margin-top: 2rem;
+  width: 80%;
+  display: none;
+  inset: 0 0 0 20%;
+  position: fixed;
+  opacity: 0.85;
+  background-color: #10162f;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  padding: 1rem;
+  z-index: 1000;
+  transition: 300ms ease-in-out;
+  color: #fff !important;
+}
+#mNav img {
+  width: 40px;
+  height: 40px;
+}
+#mNav > div {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+#mNav i {
+  font-size: 2rem;
+}
+#mNav li {
+  font-size: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+#mNav a {
+  color: #fff;
+}
+#mNav p {
+  margin-top: 5rem;
 }
 
 header {
   margin: auto;
-  margin-top: 4rem;
   width: 85%;
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   justify-content: center;
@@ -212,10 +273,6 @@ header h3 {
   }
 }
 
-.section {
-  padding: 4rem 0;
-}
-
 .section-light {
   margin: auto;
   display: flex;
@@ -239,28 +296,15 @@ header h3 {
   }
 }
 
-.section-default {
+#section {
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  align-items: flex-start;
-  gap: 2rem;
-  background-color: #fff;
-  padding: 8rem 12rem 4rem 12rem;
-  background-color: #FFF0E5;
-}
-.section-default div {
-  flex: 1;
-}
-@media only screen and (max-width: 800px) {
-  .section-default {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-  }
+  justify-content: space-between;
+  padding: 4rem 12rem;
 }
 
 .got-question {
