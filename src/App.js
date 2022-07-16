@@ -7,6 +7,7 @@ import {
 import Nav from "./components/nav";
 import ErrorPage from "./ErrorPage";
 import Home from "./Home";
+import About from "./About";
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
       <Nav />
     <div>
       <Routes>
-        <Route path="/" element={<Home /> } />
+        <Route exact path="/" element={<Home /> } />
         <Route path="*" element={<ErrorPage /> } />
+        <Route path="/About" element={<About /> } />
       </Routes>
     </div>
     </Router>

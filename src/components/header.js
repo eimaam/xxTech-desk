@@ -12,9 +12,7 @@ function Header(){
                 <button>Hire US TODAY!</button> 
                 &nbsp; <button>About us <i className="fa-solid fa-info"></i></button>
             </div>
-            <div className="headerImage">
-                <img src={headerImg} alt=""/>
-            </div>  
+            <img src={headerImg} alt="office"/>  
         </header>
     )
 }

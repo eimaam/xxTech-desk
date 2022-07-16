@@ -52,7 +52,7 @@ function Nav(){
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><HashLink to="#services">Services</HashLink></li>
-                    <li><Link to="">About us</Link></li>
+                    <li><Link to="/About">About us</Link></li>
                     <li><Link to="">Contact us</Link></li>
                     <li><Link to="">Portfolio</Link></li>
                 </ul>

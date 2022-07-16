@@ -49,7 +49,7 @@ html, body{
     height: 100%;
     color: $text;
     background-color: $bgColor;
-    line-height: 2;
+    line-height: 1.6;
     transition: 700ms ease-in;
     /* overflow-x: hidden; */
     word-wrap: break-word;
@@ -82,6 +82,9 @@ h2{
     font-family: $heading-text;
     font-size: 2rem;
     text-transform: uppercase;
+    @include mobile{
+        font-size: 1rem;
+    }
 }
 h3{
     font-family: $secondary-text;
@@ -122,6 +125,9 @@ button{
     padding: 0.8rem 1.5rem;
     border: none;
     text-transform: uppercase;
+    @include mobile{
+        padding: 0.8rem;
+    }
 
     &:hover{
         background-color: #788fdb;
@@ -185,7 +191,8 @@ nav{
         margin-right: auto;
         align-self: center;
         @include mobile{
-            display: none;
+            display: block;
+            font-size: 1rem;
         }
     }
     ul{
@@ -244,31 +251,41 @@ nav{
 header{
     margin: auto;
     width: 85%;
-    height: 100vh;
+    height: 100vh !important;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     justify-content: center;
-    gap: 3rem;
     align-items: center;
+    gap: 3rem;
+    
     img{
         width: 100%;
     }
 
     h2{
         font-family: $heading-text;
-        font-size: 2.5rem
+        font-size: 2.5rem;
+        @include mobile{
+            font-size: 1.6rem;
+            text-align: left;
+        }
+    }
+    p{
+        font-size: 1rem;
     }
     h3{
         animation-name: tagline;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
         animation-duration: 3000ms;
+        @include mobile{
+            font-size: 1rem;
+        }
     }
 
     @include mobile{
         @include flex(column-reverse);
         width: 95%;
-        
     }
 }
 
