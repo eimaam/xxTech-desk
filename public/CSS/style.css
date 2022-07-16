@@ -124,6 +124,16 @@ button:hover {
   text-align: center;
 }
 
+#fixedButton img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  margin: 1rem;
+  border: none;
+  z-index: 999;
+}
+
 marquee {
   background-color: #fff;
   margin: 0;
@@ -273,10 +283,11 @@ header h2 {
 @media only screen and (max-width: 800px) {
   header h2 {
     text-align: left;
+    font-size: 1.5rem;
   }
 }
 header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 header h3 {
   -webkit-animation-name: tagline;

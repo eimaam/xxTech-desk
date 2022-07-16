@@ -15,13 +15,13 @@ function App() {
   return (
     <Router>
       <Nav />
-    <div>
-      <Routes>
-        <Route exact path="/" element={<Home /> } />
-        <Route path="*" element={<ErrorPage /> } />
-        <Route path="/About" element={<About /> } />
-      </Routes>
-    </div>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home /> } />
+          <Route path="*" element={<ErrorPage /> } />
+          <Route path="/About" element={<About /> } />
+        </Routes>
+      </div>
     </Router>
   );
 }

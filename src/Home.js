@@ -2,9 +2,10 @@ import React from "react";
 import Header from "./components/header";
 import Section from "./components/details";
 import MiniSection from "./components/section";
-import Question from "./components/mini-section(questions)";
-import CardSection from "./components/card-section";
+import Question from "./components/miniSection(questions)";
+import CardSection from "./components/cardSection";
 import Footer from "./components/footer";
+import FixedContactButton from "./components/fixedContactButton";
 
 
 // Images & gifs
@@ -18,6 +19,7 @@ function Home(){
         <>
             <Header />
             <div className="main" id="main">
+                <FixedContactButton />
                 <Section
                 className="section-light" 
                 image = {team}
