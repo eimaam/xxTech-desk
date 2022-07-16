@@ -83,7 +83,7 @@ h2{
     font-size: 2rem;
     text-transform: uppercase;
     @include mobile{
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }
 h3{
@@ -266,12 +266,11 @@ header{
         font-family: $heading-text;
         font-size: 2.5rem;
         @include mobile{
-            font-size: 1.6rem;
             text-align: left;
         }
     }
     p{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     h3{
         animation-name: tagline;

@@ -55,7 +55,7 @@ h2 {
 }
 @media only screen and (max-width: 800px) {
   h2 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -272,12 +272,11 @@ header h2 {
 }
 @media only screen and (max-width: 800px) {
   header h2 {
-    font-size: 1.6rem;
     text-align: left;
   }
 }
 header p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 header h3 {
   -webkit-animation-name: tagline;
