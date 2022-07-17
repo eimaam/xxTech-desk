@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../Assets/images/techDesk_logo.png"
 import { Link } from "react-router-dom"
 import { HashLink } from "react-router-hash-link";
-import App from "../App";
 // import ReactSwitch from "react-switch";
 
 function Nav(){
@@ -24,7 +23,7 @@ function Nav(){
         const hamburger = document.getElementById("hamburger") 
         const mNav = document.getElementById("mNav");
         const closeNav = document.getElementById("closeNav");
-        if(mNav.style.display != "block"){
+        if(mNav.style.display !== "block"){
             mNav.style.display = "block"
             closeNav.style.display = "block"
             hamburger.style.display = "none"

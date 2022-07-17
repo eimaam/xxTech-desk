@@ -382,8 +382,10 @@ header{
 }
 footer{
     @include flex(row);
+    flex-wrap: wrap;
     margin: 2rem auto 10rem auto;
-    padding-inline: 2rem;
+    // padding-inline: 2rem;
+    width: 85%;
     align-items: flex-start;
 
     > div{

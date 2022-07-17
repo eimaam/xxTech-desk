@@ -469,8 +469,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
   margin: 2rem auto 10rem auto;
-  padding-inline: 2rem;
+  width: 85%;
   align-items: flex-start;
 }
 footer > div {

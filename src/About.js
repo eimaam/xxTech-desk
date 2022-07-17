@@ -1,5 +1,5 @@
 import React from 'react'
-import info from "../src/Assets/images/info-message.png"
+import info from "../src/Assets/images/chat-information.png"
 
 export default function About() {
   return (
