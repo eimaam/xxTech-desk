@@ -6,7 +6,7 @@ export default function Contact() {
    
   return (
     <div id='contactContainer'>
-        <h2>/ CONTACT US: </h2>
+        <h2>CONTACT US: </h2>
         <div id="contact">
             <div className='contact--div'>
                 <Fade direction="left">
