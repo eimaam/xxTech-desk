@@ -267,6 +267,10 @@ header{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    @include mobile{
+        gap: 1.5rem;
+    }
     
     img{
         width: 100%;
@@ -277,11 +281,14 @@ header{
         font-size: 2.5rem;
         @include mobile{
             text-align: left;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
     p{
         font-size: 1.5rem;
+        @include mobile{
+            font-size: 1.1rem;
+        }
     }
     h3{
         animation-name: tagline;
@@ -382,6 +389,61 @@ header{
         box-shadow: -5px 5px $text;
     }
 }
+// CONTACT component styling
+#contactContainer{
+    margin-block: 2rem;
+    h2{
+        text-align: center;
+    }
+}
+#contact{
+    margin: auto;
+    width: 85%;
+    
+    .tally--form{
+        min-width: 100%;
+
+        input{
+            border: solid red;
+        }
+    }
+
+    .contact--div{
+        border: solid $bgColor;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-inline: 2rem;
+
+        @include mobile{
+            margin-inline: 1rem;
+            grid-template-columns: 1fr;
+        }
+
+        img{
+            width: 150px !important;
+        }
+
+        form{
+            @include flex(column);
+            gap: 1.5rem;
+            // border: solid $grey;
+            padding: 1rem;
+
+            >*{
+                width: 100%;
+            }
+            
+        }
+
+    }
+    .g--map{
+        width: 70%;
+        height: 300px;
+    }
+}
+
 footer{
     @include flex(row);
     flex-wrap: wrap;

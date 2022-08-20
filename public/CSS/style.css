@@ -273,6 +273,11 @@ header {
   align-items: center;
   gap: 3rem;
 }
+@media only screen and (max-width: 800px) {
+  header {
+    gap: 1.5rem;
+  }
+}
 header img {
   width: 100%;
 }
@@ -283,11 +288,16 @@ header h2 {
 @media only screen and (max-width: 800px) {
   header h2 {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 header p {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  header p {
+    font-size: 1.1rem;
+  }
 }
 header h3 {
   -webkit-animation-name: tagline;
@@ -461,6 +471,61 @@ header h3 {
 .card:hover {
   transform: scale(1.01);
   box-shadow: -5px 5px #10162f;
+}
+
+#contactContainer {
+  margin-block: 2rem;
+}
+#contactContainer h2 {
+  text-align: center;
+}
+
+#contact {
+  margin: auto;
+  width: 85%;
+}
+#contact .tally--form {
+  min-width: 100%;
+}
+#contact .tally--form input {
+  border: solid red;
+}
+#contact .contact--div {
+  border: solid #FFF0E5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-inline: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  #contact .contact--div {
+    margin-inline: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+#contact .contact--div img {
+  width: 150px !important;
+}
+#contact .contact--div form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+#contact .contact--div form > div {
+  flex: 1;
+}
+#contact .contact--div form > * {
+  width: 100%;
+}
+#contact .g--map {
+  width: 70%;
+  height: 300px;
 }
 
 footer {
