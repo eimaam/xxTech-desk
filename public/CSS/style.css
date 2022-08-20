@@ -19,6 +19,7 @@ html, body {
   /* overflow-x: hidden; */
   word-wrap: break-word;
   text-align: justify;
+  scroll-padding-top: 15vh;
 }
 
 a {
