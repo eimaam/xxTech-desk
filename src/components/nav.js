@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../Assets/images/techDesk_logo.png"
 import { Link } from "react-router-dom"
 import { HashLink } from "react-router-hash-link";
+
 // import ReactSwitch from "react-switch";
 
 function Nav(){
@@ -19,6 +20,9 @@ function Nav(){
 // Function end
 
 // Mobile Navigation setup
+    const [navToggle, setNavToggle] = useState(false);
+    
+
     function showHideNav(){
         const hamburger = document.getElementById("hamburger") 
         const mNav = document.getElementById("mNav");
@@ -55,14 +59,18 @@ function Nav(){
                 </ul>
                 {/* <ReactSwitch className="react-switch"/>   */}
                 <div id="toggler">
-                    <i class="fa-solid fa-bars" id="hamburger" onClick={showHideNav}></i>
-                    <i class="fa-solid fa-xmark" id="closeNav" onClick={showHideNav}></i>
+                    <i class="fa-solid fa-bars" id="hamburger" onClick={() => setNavToggle(!navToggle)}></i>
                 </div>          
             </div>
         </nav>
-        {/* Mobile
-                    Nav Bar */}
-        <div id="mNav">
+
+
+        {/* Mobile Nav Bar */}
+        {navToggle && 
+            <div id="mNav">
+                <div>
+                    <i class="fa-solid fa-xmark" id="closeNav" onClick={() => setNavToggle(!navToggle)}></i>
+                </div>
                 <div>
                     <img src={logo} alt="tech desk logo" id="mLogo" />
                 </div>
@@ -74,7 +82,8 @@ function Nav(){
                     <li><Link to="">Portfolio</Link></li>
                 </ul>
                 <p>support@techdesk.io</p>
-        </div>
+            </div>
+        }
         </>
     )
 }

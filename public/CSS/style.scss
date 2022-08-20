@@ -169,9 +169,10 @@ nav{
     justify-content: space-between;
     padding-inline: 1.5rem;
     box-shadow: 1px 1px;
-    z-index: 9;
+    z-index: 1;
     #toggler{
         text-align: right;
+        z-index: 9;
     }
     #hamburger{
         display: none;
@@ -179,9 +180,7 @@ nav{
             display: block;
         }
     }
-    #closeNav{
-        display: none;
-    }
+    
     &.active{
         background-color: $default;
     }
@@ -217,22 +216,28 @@ nav{
         font-size: 1.1rem;
     }
     
-
-    
 }
 
 #mNav{
     width: 80%;
-    display: none;
+    display: block;
     inset: 0 0 0 20%;
     position: fixed;
     opacity: 0.95;
     background-color: $text;
     backdrop-filter: blur(1rem);
     padding: 1rem;
-    z-index: 10;
+    z-index: 1;
     transition: 300ms ease-in-out;
     color: $default !important;
+
+    #closeNav{
+        color: red;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 0;
+    }
 
     img{
         width: 40px;

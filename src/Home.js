@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/header";
 import Section from "./components/details";
 import MiniSection from "./components/section";

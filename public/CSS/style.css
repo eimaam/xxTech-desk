@@ -154,10 +154,11 @@ nav {
   justify-content: space-between;
   padding-inline: 1.5rem;
   box-shadow: 1px 1px;
-  z-index: 9;
+  z-index: 1;
 }
 nav #toggler {
   text-align: right;
+  z-index: 9;
 }
 nav #hamburger {
   display: none;
@@ -166,9 +167,6 @@ nav #hamburger {
   nav #hamburger {
     display: block;
   }
-}
-nav #closeNav {
-  display: none;
 }
 nav.active {
   background-color: #fff;
@@ -220,7 +218,7 @@ nav li {
 
 #mNav {
   width: 80%;
-  display: none;
+  display: block;
   inset: 0 0 0 20%;
   position: fixed;
   opacity: 0.95;
@@ -228,9 +226,16 @@ nav li {
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   padding: 1rem;
-  z-index: 10;
+  z-index: 1;
   transition: 300ms ease-in-out;
   color: #fff !important;
+}
+#mNav #closeNav {
+  color: red;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 0;
 }
 #mNav img {
   width: 40px;
