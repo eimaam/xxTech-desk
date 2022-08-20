@@ -215,6 +215,7 @@ nav{
         text-transform: uppercase;
         font-size: 1.1rem;
     }
+    
 
     
 }
@@ -260,7 +261,7 @@ nav{
 header{
     margin: auto;
     width: 85%;
-    height: 100vh !important;
+    height: 95vh !important;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     justify-content: center;
@@ -280,13 +281,14 @@ header{
         }
     }
     p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     h3{
         animation-name: tagline;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
         animation-duration: 3000ms;
+        font-size: 2rem;
         @include mobile{
             font-size: 1rem;
         }
@@ -385,7 +387,7 @@ footer{
     flex-wrap: wrap;
     margin: 2rem auto 10rem auto;
     // padding-inline: 2rem;
-    width: 85%;
+    width: 70%;
     align-items: flex-start;
 
     > div{
@@ -409,6 +411,7 @@ footer{
     @include flex(row);
     text-align: justify;
     justify-content: space-around;
+    width: 70%;
 
     p{
         font-size: 1rem;

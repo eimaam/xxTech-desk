@@ -266,7 +266,7 @@ nav li {
 header {
   margin: auto;
   width: 85%;
-  height: 100vh !important;
+  height: 95vh !important;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   justify-content: center;
@@ -287,7 +287,7 @@ header h2 {
   }
 }
 header p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 header h3 {
   -webkit-animation-name: tagline;
@@ -298,6 +298,7 @@ header h3 {
           animation-iteration-count: infinite;
   -webkit-animation-duration: 3000ms;
           animation-duration: 3000ms;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 800px) {
   header h3 {
@@ -471,7 +472,7 @@ footer {
   gap: 1rem;
   flex-wrap: wrap;
   margin: 2rem auto 10rem auto;
-  width: 85%;
+  width: 70%;
   align-items: flex-start;
 }
 footer > div {
@@ -502,6 +503,7 @@ footer p {
   gap: 1rem;
   text-align: justify;
   justify-content: space-around;
+  width: 70%;
 }
 .endNote > div {
   flex: 1;
