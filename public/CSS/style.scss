@@ -169,7 +169,7 @@ nav{
     justify-content: space-between;
     padding-inline: 1.5rem;
     box-shadow: 1px 1px;
-    z-index: 10;
+    z-index: 9;
     #toggler{
         text-align: right;
     }
@@ -222,16 +222,15 @@ nav{
 }
 
 #mNav{
-    margin-top: 2rem;
     width: 80%;
     display: none;
     inset: 0 0 0 20%;
     position: fixed;
-    opacity: 0.85;
+    opacity: 0.95;
     background-color: $text;
     backdrop-filter: blur(1rem);
     padding: 1rem;
-    z-index: 1000;
+    z-index: 10;
     transition: 300ms ease-in-out;
     color: $default !important;
 
@@ -264,15 +263,23 @@ header{
     width: 85%;
     height: 95vh !important;
     display: grid;
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 
     @include mobile{
-        gap: 1.5rem;
+        @include flex(column-reverse);
+        width: 95%;
+
+        
     }
     
+    .hero--img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     img{
         width: 100%;
     }
@@ -302,10 +309,7 @@ header{
         }
     }
 
-    @include mobile{
-        @include flex(column-reverse);
-        width: 90%;
-    }
+    
 }
 
 .section-light{

@@ -81,9 +81,7 @@ function Home(){
                 />
                 </Fade>
             {/* Cards - Our Services*/}
-                <JackInTheBox>
                 <CardSection />
-                </JackInTheBox>
                 
                 <Bounce>
                 <Section 
