@@ -324,7 +324,7 @@ header h3 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 95%;
+    width: 90%;
   }
   header > div {
     flex: 1;
@@ -485,11 +485,14 @@ header h3 {
   margin: auto;
   width: 85%;
 }
+@media only screen and (max-width: 800px) {
+  #contact {
+    width: 90%;
+    padding: 0;
+  }
+}
 #contact .tally--form {
   min-width: 100%;
-}
-#contact .tally--form input {
-  border: solid red;
 }
 #contact .contact--div {
   border: solid #FFF0E5;
@@ -501,7 +504,7 @@ header h3 {
 }
 @media only screen and (max-width: 800px) {
   #contact .contact--div {
-    margin-inline: 1rem;
+    margin-inline: 0;
     grid-template-columns: 1fr;
   }
 }
@@ -526,6 +529,7 @@ header h3 {
 }
 #contact .g--map {
   margin: auto;
+  text-align: center;
   width: 80%;
   height: 350px;
 }

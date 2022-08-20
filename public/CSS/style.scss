@@ -304,7 +304,7 @@ header{
 
     @include mobile{
         @include flex(column-reverse);
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -400,13 +400,15 @@ header{
 #contact{
     margin: auto;
     width: 85%;
+    @include mobile{
+        width: 90%;
+        padding: 0;
+
+    }
     
     .tally--form{
         min-width: 100%;
 
-        input{
-            border: solid red;
-        }
     }
 
     .contact--div{
@@ -418,7 +420,7 @@ header{
         margin-inline: 2rem;
 
         @include mobile{
-            margin-inline: 1rem;
+            margin-inline: 0;
             grid-template-columns: 1fr;
         }
 
@@ -441,6 +443,7 @@ header{
     }
     .g--map{
         margin: auto;
+        text-align: center;
         width: 80%;
         height: 350px;
     }
