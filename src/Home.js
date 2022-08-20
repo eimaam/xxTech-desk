@@ -18,10 +18,11 @@ import { Bounce, Fade, Flip, JackInTheBox, Roll, Rotate, Slide } from "react-awe
 import Contact from "./components/Contact";
 
 function Home(){
+
     return (
         <>
             <Header />
-            <div className="main" id="main">
+            <div className="main" id="main" >
                 <FixedContactButton />
 
                 <Slide >

@@ -1,3 +1,4 @@
+import { useState } from "react"
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,9 +8,11 @@ import Nav from "./components/nav";
 import ErrorPage from "./ErrorPage";
 import Home from "./Home";
 import About from "./About";
+import React from "react";
 
 
 function App() {
+
   return (
     <Router>
       <Nav />

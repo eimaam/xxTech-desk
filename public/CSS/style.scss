@@ -223,13 +223,15 @@ nav{
     display: block;
     inset: 0 0 0 20%;
     position: fixed;
-    opacity: 0.95;
-    background-color: $text;
+    background-color: $bgColor;
     backdrop-filter: blur(1rem);
+    color: $dark !important;
     padding: 1rem;
     z-index: 1;
-    transition: 300ms ease-in-out;
-    color: $default !important;
+    // transition-property: all; 
+    // transition-duration: 0.3s;
+    // transition-timing-function: ease-in;
+    // transition-delay: 0s;
 
     #closeNav{
         color: red;
@@ -245,20 +247,25 @@ nav{
     }
     > div{
         @include flex(row);
+        
         justify-content: space-between;
     }
     i{
+        
         font-size: 2rem;
     }
     li{
         font-size: 1rem;
         padding: 1.5rem 0;
-        border-bottom: 1px solid $default;
+        
+        border-bottom: 1px solid $dark;
     }
     a{
-        color: $default;
+        
+        color: $dark;
     }
     p{
+        
         margin-top: 5rem;
     }
 }

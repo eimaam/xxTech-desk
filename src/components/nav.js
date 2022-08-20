@@ -20,8 +20,9 @@ function Nav(){
 // Function end
 
 // Mobile Navigation setup
+
     const [navToggle, setNavToggle] = useState(false);
-    
+
 
     function showHideNav(){
         const hamburger = document.getElementById("hamburger") 
@@ -51,11 +52,11 @@ function Nav(){
             </div>
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><HashLink to="#services">Services</HashLink></li>
-                    <li><Link to="/About">About us</Link></li>
-                    <li><HashLink to="#contactContainer">Contact us</HashLink></li>
-                    <li><Link to="">Portfolio</Link></li>
+                    <li ><Link to="/">Home</Link></li>
+                    <li ><HashLink to="#services">Services</HashLink></li>
+                    <li ><Link to="/About">About us</Link></li>
+                    <li ><HashLink to="#contactContainer">Contact us</HashLink></li>
+                    <li ><Link to="">Portfolio</Link></li>
                 </ul>
                 {/* <ReactSwitch className="react-switch"/>   */}
                 <div id="toggler">
@@ -75,11 +76,11 @@ function Nav(){
                     <img src={logo} alt="tech desk logo" id="mLogo" />
                 </div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><HashLink to="#services">Services</HashLink></li>
-                    <li><Link to="/About">About us</Link></li>
-                    <li><HashLink to="#contactContainer">Contact us</HashLink></li>
-                    <li><Link to="">Portfolio</Link></li>
+                    <li onClick={() => setNavToggle(!navToggle)}><Link to="/">Home</Link></li>
+                    <li onClick={() => setNavToggle(!navToggle)}><HashLink to="#services">Services</HashLink></li>
+                    <li onClick={() => setNavToggle(!navToggle)}><Link to="/About">About us</Link></li>
+                    <li onClick={() => setNavToggle(!navToggle)}><HashLink to="#contactContainer">Contact us</HashLink></li>
+                    <li onClick={() => setNavToggle(!navToggle)}><Link to="">Portfolio</Link></li>
                 </ul>
                 <p>support@techdesk.io</p>
             </div>

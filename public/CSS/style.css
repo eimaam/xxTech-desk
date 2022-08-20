@@ -221,14 +221,12 @@ nav li {
   display: block;
   inset: 0 0 0 20%;
   position: fixed;
-  opacity: 0.95;
-  background-color: #10162f;
+  background-color: #FFF0E5;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
+  color: #212121 !important;
   padding: 1rem;
   z-index: 1;
-  transition: 300ms ease-in-out;
-  color: #fff !important;
 }
 #mNav #closeNav {
   color: red;
@@ -259,10 +257,10 @@ nav li {
 #mNav li {
   font-size: 1rem;
   padding: 1.5rem 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #212121;
 }
 #mNav a {
-  color: #fff;
+  color: #212121;
 }
 #mNav p {
   margin-top: 5rem;
