@@ -19,7 +19,6 @@ export default function Footer(){
                     <ol>Book a Presentation!</ol>
                     <ol>About</ol>
                     <ol>Contact Us</ol>
-                    <ol>Contact Us</ol>
                 </ul>
             </div>
             <div>

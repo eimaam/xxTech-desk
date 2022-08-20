@@ -36,7 +36,6 @@ function Nav(){
 // Function end
     return(
         <>
-        {/* <marquee behavior="scroll" direction="" scrollamount="15">Your Business/Brand needs an Online presence! &nbsp;&nbsp;&nbsp; Your Business needs an Online presence! &nbsp;&nbsp;&nbsp; Your Business needs an Online presence!</marquee> */}
         {/* Desktop
                     Nav Bar */}
         <nav className={navBg ? "nav active" : "nav"}>
@@ -51,7 +50,7 @@ function Nav(){
                     <li><Link to="/">Home</Link></li>
                     <li><HashLink to="#services">Services</HashLink></li>
                     <li><Link to="/About">About us</Link></li>
-                    <li><Link to="">Contact us</Link></li>
+                    <li><HashLink to="#contactContainer">Contact us</HashLink></li>
                     <li><Link to="">Portfolio</Link></li>
                 </ul>
                 {/* <ReactSwitch className="react-switch"/>   */}
@@ -68,10 +67,10 @@ function Nav(){
                     <img src={logo} alt="tech desk logo" id="mLogo" />
                 </div>
                 <ul>
-                <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><HashLink to="#services">Services</HashLink></li>
                     <li><Link to="/About">About us</Link></li>
-                    <li><Link to="">Contact us</Link></li>
+                    <li><HashLink to="#contactContainer">Contact us</HashLink></li>
                     <li><Link to="">Portfolio</Link></li>
                 </ul>
                 <p>support@techdesk.io</p>

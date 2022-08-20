@@ -14,6 +14,8 @@ import rocket from "../src/Assets/images/Rocket.gif"
 import design from "../src/Assets/images/hobby, design _ paint, painting, art, graphic design, activity, leisure@2x.png"
 import fastMessaging from "../src/Assets/images/fast messaging.png"
 import info from "../src/Assets/images/alert-chat-bubble.png"
+import { Bounce, Fade, Flip, JackInTheBox, Roll, Rotate, Slide } from "react-awesome-reveal";
+import Contact from "./components/Contact";
 
 function Home(){
     return (
@@ -21,6 +23,8 @@ function Home(){
             <Header />
             <div className="main" id="main">
                 <FixedContactButton />
+
+                <Slide >
                 <Section
                 className="section-light" 
                 image = {team}
@@ -30,10 +34,16 @@ function Home(){
                 ImageFirst = {true}
                 buttonLabel="Check the Team"
                 />
+                </Slide>
+
+                <Slide direction="right">
                 <MiniSection 
                 title="Launch a website in 7 days or less!"
                 btnLabel="Hire us today!"
                 />
+                </Slide>
+
+                <Bounce>
                 <Section 
                 className="section-light"
                 image={info}
@@ -42,9 +52,13 @@ function Home(){
                         With roughly over 60% of the global population using the internet, Websites play an important role as over 70% of small business today own a Website. A website does not only give an easy finding and up to date info about a brand/company but also increases your business' credibility."
                 ImageFirst={true}
                 />
+                </Bounce>
 
+                <Slide direction="right">
                 <Question />
+                </Slide>
 
+                <Fade>
                 <Section 
                 className="section-light"
                 image={rocket}
@@ -53,6 +67,9 @@ function Home(){
                 showButton={true}
                 buttonLabel="See reviews"
                 />
+                </Fade>
+
+                <Fade>
                 <Section
                 className="section-light" 
                 image = {fastMessaging}
@@ -62,8 +79,13 @@ function Home(){
                 ImageFirst = {true}
                 buttonLabel="Contact us"
                 />
+                </Fade>
             {/* Cards - Our Services*/}
+                <JackInTheBox>
                 <CardSection />
+                </JackInTheBox>
+                
+                <Bounce>
                 <Section 
                     className="section-light"
                     image={design}
@@ -71,9 +93,14 @@ function Home(){
                     content="Online Shopping Website? Real Estate? School Management?
                             You make the choice, we bring it to life at its best!"    
                 />
-            
+                </Bounce>
+                {/* CONTACT FORM */}
+                <Contact />
+                
+                <Fade >
                 {/* Footer */}
                 <Footer />
+                </Fade>
             </div>
         </>
     )
